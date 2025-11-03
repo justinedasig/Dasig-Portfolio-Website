@@ -11,6 +11,8 @@ body {
     max-width: 1920px;
     background-color: #f5efe6;
 }
+/* @media queries for responsiveness*/
+/* Add *{} for padding and margins */
 
 .navBar {
     width: 100vw;
@@ -112,4 +114,5 @@ ul.insideNavBar {
     background-color: transparent;
     border-width: 0.2vw;
     text-transform: uppercase;
+
 }
