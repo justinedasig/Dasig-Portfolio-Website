@@ -1,0 +1,21 @@
+/* Background section */
+.hero {
+  position: relative; /* needed for layering */
+  width: 100%;
+  height: 100vh; /* full screen height */
+  background-image: url('https://via.placeholder.com/1200x800');
+  background-size: cover; /* make image fill the section */
+  background-position: center;
+  display: flex; /* centers the box easily */
+  justify-content: center;
+  align-items: center;
+}
+
+/* The box on top */
+.overlay-box {
+  background: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  color: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+}

@@ -53,12 +53,26 @@ a:hover {
 
 ul.insideNavBar {
     position: relative;
-    margin-left: 10%;
+    margin-left: 40%;
 }   
 
 .navBarList {
     display: inline-flex;
     margin-left: 10vw;
+    color: #f5efe6;
+    font-size: 1.3em;
+}
+
+.navBarList1 {
+    display: inline-flex;
+    margin-left: 10vw;
+    color: #31326f;
+    font-size: 1.3em;
+}
+
+.breaker {
+    width: 100vw;
+    height: 70px;
 }
 
 .heroImage {
@@ -125,4 +139,122 @@ ul.insideNavBar {
     background-color: #f5efe6;
     border-color: #31326f;
     transition: 1s;
+}
+
+.carouselSection {
+    height: 100vh;
+    width: 100%;
+    max-width: 1920px;
+    background-color: #31326f;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselH1 {
+    font-family: MyImpact;
+}
+
+.carousel1 {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    height: 600px;
+    background-color: #91621d;
+}
+
+.carouselTrack {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carouselTrack div {
+    height: 400px;
+    width: 1000px;
+}
+
+.div1 {
+    background-color: rgb(175, 112, 35);
+}
+
+.div2 {
+    background-color: aquamarine;
+}
+.div3 {
+    background-color: rgb(136, 136, 58);
+}
+
+button.previous, button.next {
+    position: absolute;
+    top: 50%;                        
+    transform: translateY(-50%);      
+    background: rgba(0, 0, 0, 0.5);   
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+    z-index: 10;   
+}
+
+button.prev {
+  left: 10px;
+}
+button.next {
+  right: 10px;
+}
+
+
+
+
+
+/* Sample */
+.carousel {
+  position: relative;
+  width: 400px;
+  overflow: hidden;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background-color: #91621d;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Buttons */
+button.prev, button.next1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+button.prev:hover, button.next:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+button.prev {
+  left: 10px;
+}
+button.next {
+  right: 10px;
 }
