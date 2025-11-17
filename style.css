@@ -30,6 +30,13 @@ body {
     font-family: MyImpact;
 }
 
+.divNavbar {
+    height: 70px;
+    width: 70px;
+    background-image: url(JRPDLOGO70x70.png);
+    margin-left: 20px;
+}
+
 .insideNavBar {
     display: inline-flex;
     margin-right: 10%;
@@ -53,7 +60,7 @@ a:hover {
 
 ul.insideNavBar {
     position: relative;
-    margin-left: 40%;
+    margin-left: 50%;
 }   
 
 .navBarList {
@@ -145,7 +152,7 @@ ul.insideNavBar {
     height: 100vh;
     width: 100%;
     max-width: 1920px;
-    background-color: #31326f;
+    background-color: #f5efe6;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -153,26 +160,60 @@ ul.insideNavBar {
     align-items: center;
 }
 
-.carouselH1 {
-    font-family: MyImpact;
-}
-
 .carousel1 {
     position: relative;
     width: 100%;
     max-width: 1400px;
     height: 600px;
-    background-color: #91621d;
+    background-color: #31326f;
 }
 
 .carouselTrack {
-    display: flex;
+    display: block;
     transition: transform 0.5s ease-in-out;
 }
 
-.carouselTrack div {
-    height: 400px;
-    width: 1000px;
+.carouselTrackDiv {
+    height: 600px;
+    width: 1400px;
+    display: none;
+}
+
+.carouselTrackDiv div {
+  height: 600px;
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+  background-color: #31326f;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.carouselTrackDiv div img {
+  width: 700px;
+  height: 300px;
+}
+
+.carouselTrackDiv div h1 {
+  font-family: myImpact;
+  margin: 0 0 2% 0;
+  color: #f5efe6;
+  font-size: 2em;
+}
+
+.carouselTrackDiv div h6 {
+  margin: 2% 5% 2% 5%;
+  font-family: myImpact;
+  font-size: 1.23609394314em;
+  color: #f5efe6;
+  text-align: justify;
+  word-wrap: break-word;
+}
+
+
+.carouselTrackDiv--Selected {
+  display: block;
 }
 
 .div1 {
@@ -186,75 +227,213 @@ ul.insideNavBar {
     background-color: rgb(136, 136, 58);
 }
 
-button.previous, button.next {
-    position: absolute;
-    top: 50%;                        
-    transform: translateY(-50%);      
-    background: rgba(0, 0, 0, 0.5);   
-    color: white;
-    border: none;
-    font-size: 30px;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: background 0.3s ease;
-    z-index: 10;   
+.carouselH1,
+.experienceH1 {
+    font-family: MyImpact;
+    margin-bottom: 5%;
+    font-size: 3em;
+    color: #31326f;
 }
 
-button.prev {
-  left: 10px;
-}
-button.next {
-  right: 10px;
+.carouselDiv {
+  height: 400px;
+  width: 1000px;
 }
 
-
-
-
-
-/* Sample */
-.carousel {
-  position: relative;
-  width: 400px;
-  overflow: hidden;
-  margin: 40px auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  background-color: #91621d;
-}
-
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel img {
-  width: 400px;
-  height: 200px;
-  object-fit: cover;
-}
-
-/* Buttons */
-button.prev, button.next1 {
+.carousel__nav {
+  width: 100%;
+  padding: 20px 0;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  border: none;
-  color: white;
-  font-size: 24px;
-  padding: 8px 12px;
-  cursor: pointer;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__button {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
 }
 
-button.prev:hover, button.next:hover {
-  background: rgba(0,0,0,0.8);
+.carousel__button--selected {
+  background: rgba(255, 255, 255, 0.5);
 }
 
-button.prev {
-  left: 10px;
+.experienceSection {
+  height: 100vh;
+  width: 100%;
+  max-width: 1920px;
+  background-color: #f5efe6;
 }
-button.next {
-  right: 10px;
+
+.experienceH1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.experienceContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.item:nth-child(1),
+.item:nth-child(2),
+.item:nth-child(3) {
+  width: 25%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5efe6;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+/* 
+.item1 {
+
+  background-color: #31326f;
+}
+
+.item2 {
+  background-color: #31326f;
+}
+
+.item3 {
+  background-color: #31326f;
+} */
+
+.item:nth-child(1) img,
+.item:nth-child(2) img,
+.item:nth-child(3) img{
+  width: 300px;
+  height: 350px;
+  border: #31326f solid 8px;
+  margin-bottom: 5%;
+}
+
+.item:nth-child(1) h1,
+.item:nth-child(2) h1,
+.item:nth-child(3) h1{
+  margin-bottom: 5%;
+  font-family: myImpact;
+  font-size: 2em;
+  color: #31326f;
+}
+
+.item:nth-child(1) h6,
+.item:nth-child(2) h6,
+.item:nth-child(3) h6{
+  margin: 0 5% 5% 5%;
+  font-family: myImpact;
+  font-size: 1.23609394314em;
+  color: #31326f;
+  text-align: justify;
+  word-wrap: break-word;
+}
+
+.aboutSection {
+    height: 100vh;
+    width: 100%;
+    max-width: 1920px;
+    background-color: #f5efe6;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutContent{
+  height: 700px;
+  width: 1200px;
+  background-color: #31326f;
+  margin: 0 1% 0 1%;
+  border-radius: 10px;
+}
+
+.aboutImageSkills {
+  height: 700px;
+  width: 600px;
+  background-color: #f5efe6;
+  margin: 0 1% 0 1%;
+}
+
+.aboutContent h1 {
+  font-size: 4em;
+  color: #f5efe6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: myImpact;
+  margin: 2% 0 2% 0;
+}
+
+.aboutContent h6 {
+  font-size: 2.457002457em;
+  color: #f5efe6;
+  text-align: justify;
+  word-wrap: break-word;
+  margin: 0 2% 0 2%;
+}
+
+.aboutContent h2 {
+  font-size: 3em;
+  color: #f5efe6;
+  margin: 2% 0 0 2%;
+}
+
+.aboutImage {
+  height: 300px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+
+.aboutImage img {
+  height: 295px;
+  width: 595px;
+  border: #31326f solid 2px;
+  border-radius: 4px;
+}
+
+.aboutSkills {
+  height: 390px;
+  width: 600px;
+  background-color: #31326f;
+  border-radius: 4px;
+}
+
+.aboutSkills h1 {
+  color: #f5efe6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  font-family: myImpact;
+  margin: 1% 0 0 0;
+}
+
+.aboutSkills h2 {
+  color: #f5efe6;
+  margin: 0 0 1% 2%;
+  font-size: 2em;
+  font-family: myImpact;
+}
+
+.aboutSkills h3 {
+  color: #f5efe6;
+  margin: 0 2% 1% 2%;
+  font-size: 1.23609394314em;
+  font-family: myImpact;
 }
